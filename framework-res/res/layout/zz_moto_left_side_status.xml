@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/zz_moto_left_side_status_top" />
+    <include android:id="@id/transport" android:layout_width="fill_parent" android:layout_height="108.0dip" android:layout_marginTop="6.0dip" layout="@layout/keyguard_transport_control" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/zz_moto_left_side_status_bottom" />
+</LinearLayout>

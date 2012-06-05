@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/zz_moto_left_side_status_top" />
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <Space android:layout_gravity="fill" android:layout_width="1.0dip" android:layout_height="26.0dip" />
+        <include android:id="@id/transport" android:layout_width="fill_parent" android:layout_height="108.0dip" layout="@layout/keyguard_transport_control" />
+    </RelativeLayout>
+    <TextView android:textAppearance="?textAppearanceMedium" android:textSize="@dimen/moto_keyguard_lockscreen_statusview_textsize" android:textStyle="bold" android:textColor="?textColorSecondary" android:ellipsize="marquee" android:layout_gravity="left|center" android:id="@id/carrier" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginBottom="6.0dip" android:singleLine="true" />
+    <include layout="@layout/zz_moto_horizontal_divider" />
+    <RelativeLayout android:id="@id/footerNormal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0" style="?android:attr/buttonBarStyle">
+            <Button android:textSize="@dimen/moto_keyguard_lockscreen_carrier_emergency_textsize" android:gravity="left|center" android:id="@id/emergencyCallButton" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/lockscreen_emergency_call" android:drawableLeft="@drawable/lockscreen_emergency_button" android:drawablePadding="0.0dip" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+            <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0" style="?android:attr/buttonBarStyle">
+            <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <include android:id="@id/iceDivider" layout="@layout/zz_moto_vertical_divider" />
+            <Button android:textSize="@dimen/moto_keyguard_lockscreen_carrier_emergency_textsize" android:gravity="left|center" android:id="@id/iceContacts" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/lockscreen_ice_button" android:drawableLeft="@drawable/lockscreen_emergency_contacts" android:drawablePadding="0.0dip" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

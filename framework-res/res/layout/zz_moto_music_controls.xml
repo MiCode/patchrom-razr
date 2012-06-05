@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/transport" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/keyguard_transport_control" />
+    <include android:id="@id/dlnatransport" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/keyguard_dlnatransport_control" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:rowCount="7"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="fill" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/secured_lockscreen_status_side_margin" android:layout_marginTop="@dimen/secured_lockscreen_status_side_margin" android:layout_marginRight="@dimen/secured_lockscreen_status_side_margin" android:layout_column="0" android:layout_row="0" android:layout_rowSpan="7" android:layout_columnSpan="1" layout="@layout/zz_moto_left_side_status" />
+    <com.android.internal.widget.LockPatternView android:id="@id/lockPattern" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:layout_rowSpan="7" />
+    <TextView android:layout_gravity="fill" android:id="@id/faceLockAreaView" android:background="@color/facelock_color_background" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginLeft="8.0dip" android:layout_column="1" android:layout_row="0" android:layout_rowSpan="7" android:layout_columnSpan="1" />
+</GridLayout>

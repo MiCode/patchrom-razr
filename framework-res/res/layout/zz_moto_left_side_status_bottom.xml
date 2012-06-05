@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceMedium" android:textSize="@dimen/moto_keyguard_lockscreen_statusview_textsize" android:textStyle="bold" android:textColor="?textColorSecondary" android:ellipsize="marquee" android:layout_gravity="left|center" android:id="@id/carrier" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:singleLine="true" />
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/footerNormal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/buttonBarStyle">
+        <include layout="@layout/zz_moto_horizontal_divider" />
+        <Button android:textSize="@dimen/moto_keyguard_lockscreen_carrier_emergency_textsize" android:gravity="left|center" android:id="@id/emergencyCallButton" android:layout_width="fill_parent" android:layout_height="@dimen/moto_keyguard_lockscreen_emergencybutton_height" android:text="@string/lockscreen_emergency_call" android:drawableLeft="@drawable/lockscreen_emergency_button" android:drawablePadding="0.0dip" style="?android:attr/buttonBarButtonStyle" />
+        <include android:id="@id/iceDivider" layout="@layout/zz_moto_horizontal_divider" />
+        <Button android:textSize="@dimen/moto_keyguard_lockscreen_carrier_emergency_textsize" android:gravity="left|center" android:id="@id/iceContacts" android:layout_width="fill_parent" android:layout_height="@dimen/moto_keyguard_lockscreen_emergencybutton_height" android:text="@string/lockscreen_ice_button" android:drawableLeft="@drawable/lockscreen_emergency_contacts" android:drawablePadding="0.0dip" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>
