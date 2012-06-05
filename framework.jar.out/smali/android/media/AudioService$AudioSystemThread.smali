@@ -54,7 +54,7 @@
     :try_start_0
     iget-object v0, p0, Landroid/media/AudioService$AudioSystemThread;->this$0:Landroid/media/AudioService;
 
-    new-instance v2, Landroid/view/VolumePanel;
+    new-instance v2, Lmiui/view/VolumePanel;
 
     iget-object v3, p0, Landroid/media/AudioService$AudioSystemThread;->this$0:Landroid/media/AudioService;
 
@@ -65,10 +65,10 @@
 
     iget-object v4, p0, Landroid/media/AudioService$AudioSystemThread;->this$0:Landroid/media/AudioService;
 
-    invoke-direct {v2, v3, v4}, Landroid/view/VolumePanel;-><init>(Landroid/content/Context;Landroid/media/AudioService;)V
+    invoke-direct {v2, v3, v4}, Lmiui/view/VolumePanel;-><init>(Landroid/content/Context;Landroid/media/AudioService;)V
 
-    #setter for: Landroid/media/AudioService;->mVolumePanel:Landroid/view/VolumePanel;
-    invoke-static {v0, v2}, Landroid/media/AudioService;->access$3802(Landroid/media/AudioService;Landroid/view/VolumePanel;)Landroid/view/VolumePanel;
+    #setter for: Landroid/media/AudioService;->mVolumePanel:Lmiui/view/VolumePanel;
+    invoke-static {v0, v2}, Landroid/media/AudioService;->access$3802(Landroid/media/AudioService;Lmiui/view/VolumePanel;)Lmiui/view/VolumePanel;
 
     .line 2348
     iget-object v0, p0, Landroid/media/AudioService$AudioSystemThread;->this$0:Landroid/media/AudioService;

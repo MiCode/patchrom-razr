@@ -10,7 +10,7 @@
 
 .field private static final ADNCAPACITY:I = 0x65
 
-.field private static final DBG:Z = true
+.field static final DBG:Z = true
 
 .field private static final FDN:I = 0x2
 
@@ -52,7 +52,7 @@
 
 .field private static final TAG:Ljava/lang/String; = "IccProvider"
 
-.field private static final URL_MATCHER:Landroid/content/UriMatcher;
+.field static final URL_MATCHER:Landroid/content/UriMatcher;
 
 
 # direct methods
@@ -1242,7 +1242,7 @@
     goto :goto_2
 .end method
 
-.method private log(Ljava/lang/String;)V
+.method log(Ljava/lang/String;)V
     .locals 3
     .parameter "msg"
 

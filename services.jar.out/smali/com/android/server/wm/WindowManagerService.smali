@@ -483,6 +483,8 @@
     .end annotation
 .end field
 
+.field mRoundedCorners:Lcom/android/server/wm/RoundedCornersSurface;
+
 .field mSafeMode:Z
 
 .field mScreenFrozenLock:Landroid/os/PowerManager$WakeLock;
@@ -645,6 +647,7 @@
 
 .field mWindowsFreezingScreen:Z
 
+.field mRoundedCorners:Lcom/android/server/wm/RoundedCornersSurface;
 
 # direct methods
 .method static constructor <clinit>()V

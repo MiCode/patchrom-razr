@@ -20,13 +20,15 @@
 
 .field private final mResult:Lcom/android/server/am/AppErrorResult;
 
+.field private final mCrashInfo:Landroid/app/ApplicationErrorReport$CrashInfo;
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/android/server/am/AppErrorResult;Lcom/android/server/am/ProcessRecord;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/android/server/am/AppErrorResult;Lcom/android/server/am/ProcessRecord;Landroid/app/ApplicationErrorReport$CrashInfo;)V
     .locals 9
     .parameter "context"
     .parameter "result"
     .parameter "app"
+    .parameter "crashInfo"
 
     .prologue
     const/4 v8, 0x1
@@ -55,6 +57,7 @@
     .line 57
     iput-object p2, p0, Lcom/android/server/am/AppErrorDialog;->mResult:Lcom/android/server/am/AppErrorResult;
 
+    iput-object p4, p0, Lcom/android/server/am/AppErrorDialog;->mCrashInfo:Landroid/app/ApplicationErrorReport$CrashInfo;
     .line 66
     iget-object v4, p3, Lcom/android/server/am/ProcessRecord;->pkgList:Ljava/util/HashSet;
 
@@ -150,16 +153,31 @@
     invoke-virtual {p0, v4, v5, v6}, Lcom/android/server/am/AppErrorDialog;->setButton(ILjava/lang/CharSequence;Landroid/os/Message;)V
 
     .line 99
-    iget-object v4, p3, Lcom/android/server/am/ProcessRecord;->errorReportReceiver:Landroid/content/ComponentName;
-
-    if-eqz v4, :cond_1
 
     .line 100
     const/4 v4, -0x2
 
-    const v5, 0x10403c1
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const v6, 0x10403c1
+
+    invoke-virtual {v2, v6}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
+
+    move-result-object v6
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    const-string v6, " MIUI"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v5
 
@@ -381,3 +399,14 @@
 
     return-object v0
 .end method
+
+.method static synthetic access$200(Lcom/android/server/am/AppErrorDialog;)Landroid/app/ApplicationErrorReport$CrashInfo;
+    .locals 1
+    .parameter "x0"
+
+    .prologue
+    iget-object v0, p0, Lcom/android/server/am/AppErrorDialog;->mCrashInfo:Landroid/app/ApplicationErrorReport$CrashInfo;
+
+    return-object v0
+.end method
+
