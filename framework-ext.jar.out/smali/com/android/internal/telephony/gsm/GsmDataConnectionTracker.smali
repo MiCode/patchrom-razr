@@ -3431,7 +3431,7 @@
 .end method
 
 .method private createApnList(Landroid/database/Cursor;)Ljava/util/ArrayList;
-    .locals 27
+    .locals 21
     .parameter "cursor"
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -3446,22 +3446,22 @@
     .end annotation
 
     .prologue
-    .line 1361
-    new-instance v26, Ljava/util/ArrayList;
+    .line 907
+    new-instance v20, Ljava/util/ArrayList;
 
-    invoke-direct/range {v26 .. v26}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct/range {v20 .. v20}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1362
-    .local v26, result:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/internal/telephony/ApnSetting;>;"
+    .line 908
+    .local v20, result:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/internal/telephony/ApnSetting;>;"
     invoke-interface/range {p1 .. p1}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v3
 
     if-eqz v3, :cond_1
 
-    .line 1364
+    .line 910
     :cond_0
-    const-string v3, "type"
+    const-string/jumbo v3, "type"
 
     move-object/from16 v0, p1
 
@@ -3481,40 +3481,8 @@
 
     move-result-object v15
 
-    .line 1369
+    .line 912
     .local v15, types:[Ljava/lang/String;
-    const-string v3, "carrier_enabled"
-
-    move-object/from16 v0, p1
-
-    invoke-interface {v0, v3}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
-
-    move-result v3
-
-    move-object/from16 v0, p1
-
-    invoke-interface {v0, v3}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result v25
-
-    .line 1373
-    .local v25, enabled:I
-    const-string v3, "mtusize"
-
-    move-object/from16 v0, p1
-
-    invoke-interface {v0, v3}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
-
-    move-result v3
-
-    move-object/from16 v0, p1
-
-    invoke-interface {v0, v3}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result v22
-
-    .line 1377
-    .local v22, mtuSize:I
     new-instance v2, Lcom/android/internal/telephony/ApnSetting;
 
     const-string v3, "_id"
@@ -3780,97 +3748,24 @@
 
     move-result v19
 
-    const-string v20, "inactivetimer"
+    invoke-direct/range {v2 .. v19}, Lcom/android/internal/telephony/ApnSetting;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZI)V
 
-    move-object/from16 v0, p1
-
-    move-object/from16 v1, v20
-
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
-
-    move-result v20
-
-    move-object/from16 v0, p1
-
-    move/from16 v1, v20
-
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result v20
-
-    const-string v21, "class"
-
-    move-object/from16 v0, p1
-
-    move-object/from16 v1, v21
-
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
-
-    move-result v21
-
-    move-object/from16 v0, p1
-
-    move/from16 v1, v21
-
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result v21
-
-    move-object/from16 v0, p0
-
-    iget-boolean v0, v0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->mIsDedicatedHiPri:Z
-
-    move/from16 v23, v0
-
-    move-object/from16 v0, p0
-
-    iget-boolean v0, v0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->mDunTraffic:Z
-
-    move/from16 v24, v0
-
-    invoke-direct/range {v2 .. v24}, Lcom/android/internal/telephony/ApnSetting;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZIIIIZZ)V
-
-    .line 1414
+    .line 938
     .local v2, apn:Lcom/android/internal/telephony/ApnSetting;
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "createApnList,apn"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    move-object/from16 v0, p0
-
-    invoke-virtual {v0, v3}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->log(Ljava/lang/String;)V
-
-    .line 1416
-    move-object/from16 v0, v26
+    move-object/from16 v0, v20
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1417
+    .line 939
     invoke-interface/range {p1 .. p1}, Landroid/database/Cursor;->moveToNext()Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
-    .line 1419
+    .line 941
     .end local v2           #apn:Lcom/android/internal/telephony/ApnSetting;
     .end local v15           #types:[Ljava/lang/String;
-    .end local v22           #mtuSize:I
-    .end local v25           #enabled:I
     :cond_1
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -3882,7 +3777,7 @@
 
     move-result-object v3
 
-    move-object/from16 v0, v26
+    move-object/from16 v0, v20
 
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -3896,17 +3791,15 @@
 
     invoke-virtual {v0, v3}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->log(Ljava/lang/String;)V
 
-    .line 1420
-    return-object v26
+    .line 942
+    return-object v20
 
-    .line 1377
+    .line 912
     .restart local v15       #types:[Ljava/lang/String;
-    .restart local v22       #mtuSize:I
-    .restart local v25       #enabled:I
     :cond_2
     const/16 v18, 0x0
 
-    goto/16 :goto_0
+    goto :goto_0
 .end method
 
 .method private createDataConnection()Lcom/android/internal/telephony/gsm/GsmDataConnection;
