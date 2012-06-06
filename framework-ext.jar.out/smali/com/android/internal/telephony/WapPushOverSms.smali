@@ -679,7 +679,9 @@
 
     const/16 v34, 0x0
 
-    invoke-virtual/range {v31 .. v34}, Lcom/android/internal/telephony/SMSDispatcher;->acknowledgeLastIncomingSms(ZILandroid/os/Message;)V
+    move-object/from16 v35, p2
+
+    invoke-virtual/range {v31 .. v35}, Lcom/android/internal/telephony/SMSDispatcher;->acknowledgeLastIncomingSms(ZILandroid/os/Message;Lcom/android/internal/telephony/SMSDispatcher$MtSmsTracker;)V
 
     goto :goto_0
 
