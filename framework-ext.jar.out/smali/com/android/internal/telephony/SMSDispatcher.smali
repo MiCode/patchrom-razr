@@ -2093,8 +2093,12 @@
     move-result-object v3
 
     move-object/from16 v0, p2
+    
+    invoke-virtual {p1}, Lcom/android/internal/telephony/SmsMessageBase;->getOriginatingAddress()Ljava/lang/String;
 
-    invoke-virtual {v2, v3, v0}, Lcom/android/internal/telephony/WapPushOverSms;->dispatchWapPdu([BLcom/android/internal/telephony/SMSDispatcher$MtSmsTracker;)I
+    move-result-object v4
+
+    invoke-virtual {v2, v3, v0, v4}, Lcom/android/internal/telephony/WapPushOverSms;->dispatchWapPdu([BLcom/android/internal/telephony/SMSDispatcher$MtSmsTracker;Ljava/lang/String;)I
 
     move-result v2
 
@@ -4286,7 +4290,9 @@
 
     move-object/from16 v0, p10
 
-    invoke-virtual {v5, v15, v0}, Lcom/android/internal/telephony/WapPushOverSms;->dispatchWapPdu([BLcom/android/internal/telephony/SMSDispatcher$MtSmsTracker;)I
+    move-object/from16 v6, p2
+
+    invoke-virtual {v5, v15, v0, v6}, Lcom/android/internal/telephony/WapPushOverSms;->dispatchWapPdu([BLcom/android/internal/telephony/SMSDispatcher$MtSmsTracker;Ljava/lang/String;)I
 
     move-result v5
 
@@ -4399,8 +4405,10 @@
     move-result-object v6
 
     move-object/from16 v0, p10
+    
+    move-object/from16 v7, p2
 
-    invoke-virtual {v5, v6, v0}, Lcom/android/internal/telephony/WapPushOverSms;->dispatchWapPdu([BLcom/android/internal/telephony/SMSDispatcher$MtSmsTracker;)I
+    invoke-virtual {v5, v6, v0, v7}, Lcom/android/internal/telephony/WapPushOverSms;->dispatchWapPdu([BLcom/android/internal/telephony/SMSDispatcher$MtSmsTracker;Ljava/lang/String;)I
 
     move-result v5
 

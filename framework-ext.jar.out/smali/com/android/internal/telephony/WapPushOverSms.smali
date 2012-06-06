@@ -84,7 +84,7 @@
 
 
 # virtual methods
-.method public dispatchWapPdu([BLcom/android/internal/telephony/SMSDispatcher$MtSmsTracker;)I
+.method public dispatchWapPdu([BLcom/android/internal/telephony/SMSDispatcher$MtSmsTracker;Ljava/lang/String;)I
     .locals 36
     .parameter "pdu"
     .parameter "mtSmsTracker"
@@ -1511,6 +1511,16 @@
 
     .line 382
     :cond_13
+    const-string v33, "address"
+
+    move-object/from16 v0, v33
+
+    move-object/from16 v1, p3
+
+    move-object/from16 v2, v22
+    
+    invoke-virtual {v2, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/internal/telephony/WapPushOverSms;->mSmsDispatcher:Lcom/android/internal/telephony/SMSDispatcher;
