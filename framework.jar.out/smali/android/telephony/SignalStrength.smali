@@ -2179,13 +2179,75 @@
 .end method
 
 .method public getGsmLevel()I
-    .locals 1
+    .locals 3
 
     .prologue
-    .line 817
-    iget v0, p0, Landroid/telephony/SignalStrength;->mGsmLevel:I
+    .line 410
+    invoke-virtual {p0}, Landroid/telephony/SignalStrength;->getGsmSignalStrength()I
 
-    return v0
+    move-result v0
+
+    .line 411
+    .local v0, asu:I
+    const/4 v2, 0x2
+
+    if-le v0, v2, :cond_0
+
+    const/16 v2, 0x63
+
+    if-ne v0, v2, :cond_1
+
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 417
+    .local v1, level:I
+    :goto_0
+    return v1
+
+    .line 412
+    .end local v1           #level:I
+    :cond_1
+    const/16 v2, 0xc
+
+    if-lt v0, v2, :cond_2
+
+    const/4 v1, 0x4
+
+    .restart local v1       #level:I
+    goto :goto_0
+
+    .line 413
+    .end local v1           #level:I
+    :cond_2
+    const/16 v2, 0x8
+
+    if-lt v0, v2, :cond_3
+
+    const/4 v1, 0x3
+
+    .restart local v1       #level:I
+    goto :goto_0
+
+    .line 414
+    .end local v1           #level:I
+    :cond_3
+    const/4 v2, 0x5
+
+    if-lt v0, v2, :cond_4
+
+    const/4 v1, 0x2
+
+    .restart local v1       #level:I
+    goto :goto_0
+
+    .line 415
+    .end local v1           #level:I
+    :cond_4
+    const/4 v1, 0x1
+
+    .restart local v1       #level:I
+    goto :goto_0
 .end method
 
 .method public getGsmMaxLevel()I
