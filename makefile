@@ -15,10 +15,10 @@ local-modified-jars :=
 
 local-miui-modified-apps := 
 # All apks from MIUI
-local-miui-removed-apps  := 
+local-miui-removed-apps  := LatinIME MediaProvider
 
 # All apps need to be reserved from original ZIP file
-local-phone-apps := BlurCamera FaceLock LatinIME LatinImeDictionaryPack
+local-phone-apps := BlurCamera FaceLock LatinIME LatinImeDictionaryPack MediaProvider
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
