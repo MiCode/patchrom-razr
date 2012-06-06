@@ -123,14 +123,10 @@
 
     iput-object v0, p0, Lcom/android/internal/telephony/AdnRecordCache;->mUsimPhoneBookManager:Lcom/android/internal/telephony/gsm/UsimPhoneBookManager;
 
+    .line 86
     iput-object p2, p0, Lcom/android/internal/telephony/AdnRecordCache;->LOG_TAG:Ljava/lang/String;
 
-    new-instance v0, Lcom/android/internal/telephony/AdnCacheManager;
-
-    invoke-direct {v0, p0}, Lcom/android/internal/telephony/AdnCacheManager;-><init>(Lcom/android/internal/telephony/AdnRecordCache;)V
-
-    iput-object v0, p0, Lcom/android/internal/telephony/AdnRecordCache;->mAdnCacheManager:Lcom/android/internal/telephony/AdnCacheManager;
-
+    .line 87
     return-void
 .end method
 
@@ -194,6 +190,12 @@
     iput-object v0, p0, Lcom/android/internal/telephony/AdnRecordCache;->LOG_TAG:Ljava/lang/String;
 
     .line 80
+    new-instance v0, Lcom/android/internal/telephony/AdnCacheManager;
+
+    invoke-direct {v0, p0}, Lcom/android/internal/telephony/AdnCacheManager;-><init>(Lcom/android/internal/telephony/AdnRecordCache;)V
+
+    iput-object v0, p0, Lcom/android/internal/telephony/AdnRecordCache;->mAdnCacheManager:Lcom/android/internal/telephony/AdnCacheManager;
+
     return-void
 .end method
 

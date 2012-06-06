@@ -611,35 +611,7 @@
 
     aget-object v24, v6, v33
 
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/internal/telephony/WapPushOverSms;->mContext:Landroid/content/Context;
-
-    move-object/from16 v22, v0
-
-    move-object/from16 v0, v22
-
-    invoke-static {v0, v13}, Lmiui/provider/ExtraTelephony;->checkFirewallForWapPush(Landroid/content/Context;[B)Z
-
-    move-result v22
-
-    if-eqz v22, :goto_1
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/internal/telephony/WapPushOverSms;->mSmsDispatcher:Lcom/android/internal/telephony/SMSDispatcher;
-
-    move-object/from16 v20, v0
-
-    const/16 v21, 0x1
-
-    const/16 v22, -0x1
-
-    const/16 v23, 0x0
-
-    invoke-virtual/range {v20 .. v23}, Lcom/android/internal/telephony/SMSDispatcher;->acknowledgeLastIncomingSms(ZILandroid/os/Message;)V
-
-    goto :goto_0
+    goto :goto_1
 
     .line 218
     .end local v5           #arrSemicolon:[Ljava/lang/String;
@@ -683,7 +655,33 @@
 
     invoke-static {v0, v13, v1, v2, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    goto/16 :goto_2
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/internal/telephony/WapPushOverSms;->mContext:Landroid/content/Context;
+
+    move-object/from16 v1, v23
+
+    invoke-static {v0, v1}, Lmiui/provider/ExtraTelephony;->checkFirewallForWapPush(Landroid/content/Context;[B)Z
+
+    move-result v2
+
+    if-eqz v2, :goto_2
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/internal/telephony/WapPushOverSms;->mSmsDispatcher:Lcom/android/internal/telephony/SMSDispatcher;
+
+    move-object/from16 v31, v0
+
+    const/16 v32, 0x1
+
+    const/16 v33, -0x1
+
+    const/16 v34, 0x0
+
+    invoke-virtual/range {v31 .. v34}, Lcom/android/internal/telephony/SMSDispatcher;->acknowledgeLastIncomingSms(ZILandroid/os/Message;)V
+
+    goto :goto_0
 
     .end local v13           #dataIndex:I
     .restart local v4       #appIdIndex:I
