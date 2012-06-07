@@ -9,13 +9,13 @@ local-zip-file     := europe_4.0.4.zip
 # local-out-zip-file :=
 
 # All apps from original ZIP, but has smali files chanded
-local-modified-apps := 
+local-modified-apps := BlurCamera
 
 local-modified-jars := 
 
-local-miui-modified-apps := 
+local-miui-modified-apps := Mms MiuiHome
 # All apks from MIUI
-local-miui-removed-apps  := LatinIME MediaProvider
+local-miui-removed-apps  := LatinIME
 
 # All apps need to be reserved from original ZIP file
 local-phone-apps := BlurCamera FaceLock LatinIME LatinImeDictionaryPack MediaProvider
