@@ -2336,7 +2336,6 @@
 
     move-result v4
 
-    if-eqz v4, :cond_1
 
     .line 111
     sget-object v4, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
@@ -2349,7 +2348,7 @@
     invoke-virtual {v1, v4}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 113
-    const-string v4, "com.motorola.contracts.gallery.Intent.ActionBrowseImage"
+    const-string v4, "android.intent.action.VIEW"
 
     invoke-virtual {v1, v4}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
@@ -2358,7 +2357,6 @@
 
     const-string v5, "com.motorola.cgallery.BrowseImages"
 
-    invoke-virtual {v1, v4, v5}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 128
     :goto_1
@@ -2395,7 +2393,6 @@
 
     const-string v5, "com.motorola.gallery.ExternalViewImage"
 
-    invoke-virtual {v1, v4, v5}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     goto :goto_1
 
