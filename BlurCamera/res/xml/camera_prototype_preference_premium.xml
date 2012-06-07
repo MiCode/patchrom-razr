@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/setting_faceDetection" android:key="Face Detection" android:defaultValue="false" android:summaryOn="@string/summary_faceDetection" android:summaryOff="@string/summary_faceDetection" />
+    <ListPreference android:title="@string/setting_exposure" android:key="@string/setting_exposure" android:dialogTitle="@string/setting_exposure" />
+    <CheckBoxPreference android:title="@string/setting_shutterTone" android:key="Shutter Tone" android:summary="@string/summary_shutterTone" android:defaultValue="true" />
+    <ListPreference android:entries="@array/storageLocation" android:title="@string/storage_location" android:key="Storage Location" android:defaultValue="0" android:dialogTitle="@string/storage_location" android:entryValues="@array/storageLocationValue" />
+    <CheckBoxPreference android:title="@string/geotag" android:key="Geo-tag" android:summary="@string/geotag_summary" android:defaultValue="true" />
+</PreferenceScreen>

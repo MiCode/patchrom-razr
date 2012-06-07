@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/ic_recording_01" />
+    <item android:duration="100" android:drawable="@drawable/ic_recording_02" />
+    <item android:duration="100" android:drawable="@drawable/ic_recording_03" />
+    <item android:duration="100" android:drawable="@drawable/ic_recording_04" />
+    <item android:duration="100" android:drawable="@drawable/ic_recording_05" />
+    <item android:duration="100" android:drawable="@drawable/ic_recording_06" />
+    <item android:duration="100" android:drawable="@drawable/ic_recording_07" />
+    <item android:duration="100" android:drawable="@drawable/ic_recording_08" />
+    <item android:duration="100" android:drawable="@drawable/ic_recording_09" />
+    <item android:duration="100" android:drawable="@drawable/ic_recording_10" />
+    <item android:duration="100" android:drawable="@drawable/ic_recording_11" />
+    <item android:duration="100" android:drawable="@drawable/ic_recording_12" />
+    <item android:duration="100" android:drawable="@drawable/ic_recording_13" />
+    <item android:duration="100" android:drawable="@drawable/ic_recording_14" />
+    <item android:duration="100" android:drawable="@drawable/ic_recording_15" />
+    <item android:duration="100" android:drawable="@drawable/ic_recording_16" />
+    <item android:duration="100" android:drawable="@drawable/ic_recording_17" />
+    <item android:duration="100" android:drawable="@drawable/ic_recording_18" />
+    <item android:duration="100" android:drawable="@drawable/ic_recording_19" />
+    <item android:duration="100" android:drawable="@drawable/ic_recording_20" />
+</animation-list>

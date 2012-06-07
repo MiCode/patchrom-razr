@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ScenesImg">
+        <item>ic_menu_auto</item>
+        <item>ic_menu_portrait</item>
+        <item>ic_menu_landscape</item>
+        <item>ic_menu_sport</item>
+        <item>ic_menu_night</item>
+        <item>ic_menu_sunset</item>
+        <item>ic_menu_macro</item>
+        <item>ic_menu_low_light</item>
+    </string-array>
+    <string-array name="VideoScenesImg">
+        <item>ic_menu_auto</item>
+        <item>ic_menu_night</item>
+    </string-array>
+    <string-array name="AudioScenesImg">
+        <item>ic_menu_stereo</item>
+        <item>ic_menu_wind_reduction</item>
+        <item>ic_menu_concert</item>
+        <item>ic_menu_balanced</item>
+        <item>ic_menu_front_facing</item>
+    </string-array>
+    <string-array name="focus_values">
+        <item>continuous</item>
+        <item>auto</item>
+    </string-array>
+    <string-array name="front_focus_values">
+        <item>fixed</item>
+    </string-array>
+</resources>

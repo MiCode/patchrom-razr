@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/demo_preview_window" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/demo_title" android:background="#d3395876" android:layout_width="fill_parent" android:layout_height="wrap_content" android:shadowColor="#ff000000" android:shadowRadius="1.6" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:background="#d3395876" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/demo_title">
+        <TextView android:textSize="15.0sp" android:gravity="center_horizontal" android:id="@id/demo_left_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#ff000000" android:shadowRadius="1.6" android:layout_weight="1.0" />
+        <TextView android:textSize="15.0sp" android:gravity="center_horizontal" android:id="@id/demo_right_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#ff000000" android:shadowRadius="1.6" android:layout_weight="1.0" />
+    </LinearLayout>
+    <Button android:id="@id/demo_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help_exit" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:onClick="backButton" />
+</RelativeLayout>

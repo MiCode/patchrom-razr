@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/griddialogcontainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/gridviewtitle" android:paddingTop="0.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:shadowColor="#ff000000" android:shadowRadius="1.6" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/gridviewtitle">
+        <com.motorola.Camera.ExpandedGridView android:id="@id/griddialog" android:paddingLeft="7.0dip" android:paddingTop="5.0dip" android:paddingRight="7.0dip" android:paddingBottom="3.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:horizontalSpacing="3.0dip" android:verticalSpacing="8.0dip" />
+    </ScrollView>
+</RelativeLayout>

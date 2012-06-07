@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/post_picture_panel" android:background="@drawable/control_bar" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/takenewphoto" android:background="@drawable/menu_bg_land" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:src="@drawable/ic_camera" android:layout_centerInParent="true" android:rotation="90.0" style="@style/OnScreenActionIcon" />
+    </RelativeLayout>
+    <ImageView android:background="@drawable/divider_vertical_actionmenu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" />
+    <RelativeLayout android:id="@id/selectphoto" android:background="@drawable/menu_bg_land" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:src="@drawable/ic_done" android:layout_centerInParent="true" android:rotation="90.0" style="@style/OnScreenActionIcon" />
+    </RelativeLayout>
+    <ImageView android:background="@drawable/divider_vertical_actionmenu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" />
+    <RelativeLayout android:id="@id/cancelphoto" android:background="@drawable/menu_bg_land" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:src="@drawable/ic_cancel" android:layout_centerInParent="true" android:rotation="90.0" style="@style/OnScreenActionIcon" />
+    </RelativeLayout>
+</LinearLayout>

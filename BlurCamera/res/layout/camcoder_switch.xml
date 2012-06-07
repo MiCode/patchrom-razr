@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.motorola.Camera.View.CamcoderSwitch android:orientation="vertical" android:id="@id/camcoder_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/camera_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_camera_on" />
+        <ImageView android:id="@id/camcoder_icon" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_video_off" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom|left|center" android:paddingLeft="2.0dip" android:paddingBottom="50.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="bottom" android:id="@id/toggle_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camcoder_switch_toggle_bg" />
+        <ImageView android:layout_gravity="bottom|left|center" android:id="@id/toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camcoder_switch_toggle" />
+    </FrameLayout>
+</com.motorola.Camera.View.CamcoderSwitch>
