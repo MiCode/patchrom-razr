@@ -31,6 +31,8 @@ local-phone-apps := BlurCamera FaceLock LatinIME LatinImeDictionaryPack Applicat
 local-pre-zip := local-zip-misc
 local-after-zip:= local-test
 
+local-rewrite-skia-lib:= false
+
 # The local targets after the zip file is generated, could include 'zip2sd' to 
 # deliver the zip file to phone, or to customize other actions
 
