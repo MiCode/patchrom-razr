@@ -70,7 +70,6 @@ system/etc/firmware/ti-connectivity/wl12xx-fac-nvs.bin|pds/wifi/nvs_map_mac80211
 system/etc/firmware/ti-connectivity/wl12xx-upd-nvs.bin|data/misc/wifi/firmware/wl12xx-nvs.bin
 system/fonts/DroidSans-Bold.ttf|system/fonts/Roboto-Bold.ttf
 system/fonts/DroidSans.ttf|system/fonts/Roboto-Regular.ttf
-system/lib/egl/egl.cfg|sys/egl/egl.cfg
 system/multiconfig/ap/0|system/multiconfig/ap/7116
 system/multiconfig/bp/7006|system/multiconfig/bp/7005
 system/multiconfig/bp/7012|system/multiconfig/bp/7005
