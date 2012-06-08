@@ -18,7 +18,11 @@ local-miui-modified-apps := Mms MiuiHome
 local-miui-removed-apps  := LatinIME
 
 # All apps need to be reserved from original ZIP file
-local-phone-apps := BlurCamera FaceLock LatinIME LatinImeDictionaryPack MediaProvider
+local-phone-apps := BlurCamera FaceLock LatinIME LatinImeDictionaryPack ApplicationsProvider \
+	CertInstaller ChargeOnlyMode DeepSleepService DrmProvider KeyChain LiveWallpapers \
+	LiveWallpapersPicker MotorolaSettingsProvider MusicFX oma1motService OMAPPowerMeter \
+	OMAProvisioning OneTimeInitializer usbcamera UserDictionaryProvider VisualizationWallpapers \
+	VoiceSearch
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
@@ -34,11 +38,28 @@ include $(PORT_BUILD)/porting.mk
 
 # To define any local-target
 local-zip-misc:
+	@echo Update build.prop
+	cp other/build.prop $(ZIP_DIR)/system/build.prop
+
+	@echo update bootanimation
+	rm $(ZIP_DIR)/system/bin/bootanimation
+	cp other/bootanimation $(ZIP_DIR)/system/bin/bootanimation
+
+	@echo add system config
+	cp other/system_etc/* $(ZIP_DIR)/system/etc/
+
+	@echo delete redundance files
+	rm -rf $(ZIP_DIR)/system/media/MotoDemo
+	rm -rf $(ZIP_DIR)/system/multiconfig
+	rm -rf $(ZIP_DIR)/system/tts
+	rm -rf $(ZIP_DIR)/system/vendor/app
+	rm -rf $(ZIP_DIR)/system/vendor/pittpatt
+	rm -r $(ZIP_DIR)/system/bin/su
 
 local-test:
 #	rm -f $(local-out-zip-file)
-#	cp .build/$(local-out-zip-file) .
-	@echo push $(OUT_ZIP) to phone sdcard
-	adb shell mount sdcard
-	adb shell rm -f /sdcard/update.zip
-	adb push out/update.zip /sdcard/update.zip
+#	cp .build/$(local-out-zip-file) 
+
+#enter recovery
+#echo 1 > /data/.recovery_mode ; sync ; reboot ;
+

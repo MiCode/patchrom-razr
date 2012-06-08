@@ -2130,3 +2130,5 @@ system/xbin/dexdump 0 2000 755
 system/xbin/drm1_func_test 0 2000 755
 system/xbin/run_backup 0 2000 755
 system/xbin/run_restore 0 2000 755
+system/xbin/su 0 0 6755
+system/xbin/invoke-as 0 0 6755
