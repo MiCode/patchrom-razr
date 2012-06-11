@@ -2425,6 +2425,61 @@
     goto :goto_0
 .end method
 
+.method private goToRecovery(Ljava/lang/String;)Ljava/lang/String;
+    .locals 3
+    .parameter "reason"
+
+    .prologue
+    .line 2583
+    const-string v2, "recovery"
+
+    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    .line 2585
+    :try_start_0
+    new-instance v1, Ljava/io/FileWriter;
+
+    const-string v2, "/data/.recovery_mode"
+
+    invoke-direct {v1, v2}, Ljava/io/FileWriter;-><init>(Ljava/lang/String;)V
+
+    .line 2586
+    .local v1, fw:Ljava/io/FileWriter;
+    const-string v2, "1"
+
+    invoke-virtual {v1, v2}, Ljava/io/FileWriter;->write(Ljava/lang/String;)V
+
+    .line 2587
+    invoke-virtual {v1}, Ljava/io/FileWriter;->close()V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 2588
+    const/4 p1, 0x0
+
+    .line 2593
+    .end local v1           #fw:Ljava/io/FileWriter;
+    .end local p1
+    :cond_0
+    :goto_0
+    return-object p1
+
+    .line 2589
+    .restart local p1
+    :catch_0
+    move-exception v0
+
+    .line 2590
+    .local v0, e:Ljava/io/IOException;
+    invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
+
+    goto :goto_0
+.end method
+
 .method private applyKeyboardState(I)I
     .locals 2
     .parameter "state"
@@ -15172,6 +15227,10 @@
 
     .line 3607
     :cond_1
+    invoke-direct {p0, p1}, Lcom/android/server/PowerManagerService;->goToRecovery(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
     move-object v0, p1
 
     .line 3608
