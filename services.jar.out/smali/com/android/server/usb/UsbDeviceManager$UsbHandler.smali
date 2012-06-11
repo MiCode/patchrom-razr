@@ -346,7 +346,7 @@
     if-ne v2, v6, :cond_1
 
     .line 381
-    const/4 v6, 0x0
+    const/4 v6, 0x1
 
     invoke-direct {p0, v6}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->setAdbEnabled(Z)V
     :try_end_0
