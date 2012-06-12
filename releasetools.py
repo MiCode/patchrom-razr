@@ -9,8 +9,6 @@ def AddAssertions(info):
             edify.script[i] = edify.script[i].replace("assert", "ui_print")
         elif "unmount(\"/system\");" in edify.script[i]:
             edify.script[i] = edify.script[i].replace("unmount(\"/system\");", "mount(\"ext3\", \"EMMC\", \"/dev/block/mmcblk1p20\", \"/system\");")
-        elif "mount(\"ext3\", \"EMMC\", \"/dev/block/mmcblk1p20\", \"/system\");" in edify.script[i]:
-            edify.script[i] = edify.script[i].replace("mount(\"ext3\", \"EMMC\", \"/dev/block/mmcblk1p20\", \"/system\");", "")
         elif "ui_print(\"Update Boot image...\");" in edify.script[i]:
             edify.script[i] = edify.script[i].replace("ui_print(\"Update Boot image...\");", "")
         elif "format" in edify.script[i] and "/dev/block/mmcblk1p20" in edify.script[i]:
