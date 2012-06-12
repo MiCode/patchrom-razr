@@ -1,0 +1,14 @@
+ro.mot.nat_roaming_enable=0
+provision.multi.config.id=7116
+ro.multiConfig.provision.enable=1
+ro.build.config.version.app=GAS_EMEA_USASPDRICSRTGB_A014
+persist.ril.qmi.overspi=yes
+ro.product.drm.sd.enable=1
+telephony.sms.shift_table=1
+persist.sys.timezone=Asia/Shanghai
+persist.ril.modem.ttydevice=/dev/usb/tty2-1:1.4
+ro.product.drm.fl.enable=1
+ro.mot.hw.uaprof=http://uaprof.motorola.com/phoneconfig/motoxt910/Profile/motoxt910.rdf
+ro.product.drm.cd.enable=1
+ro.build.config.version=GAS_EMEA_USASPDRICSRTGB_P021
+ro.build.bp.config.version=USASPDRICS01RUKE1004.0R
