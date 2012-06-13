@@ -1,0 +1,3 @@
+1.extendedcommands.c and recovery.c are in cm9/bootable/recovery folder
+2.recovery_keys.c are in cm9/device/samsung/tuna folder
+3.lunch option is cm_maguro-userdebug
