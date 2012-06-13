@@ -120,7 +120,7 @@ void show_install_update_menu()
                 break;
             }
             case ITEM_CHOOSE_ZIP:
-                show_choose_zip_menu("/sd-ext/");
+                show_choose_zip_menu("/sdcardext/");
                 break;
             case ITEM_CHOOSE_ZIP_INT:
                 show_choose_zip_menu("/emmc/");
