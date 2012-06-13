@@ -13,16 +13,16 @@ local-modified-apps := BlurCamera
 
 local-modified-jars := 
 
-local-miui-modified-apps := Mms MiuiHome
+local-miui-modified-apps := Mms MiuiHome Settings
 # All apks from MIUI
-local-miui-removed-apps  := LatinIME
+local-miui-removed-apps  := LatinIME MediaProvider
 
 # All apps need to be reserved from original ZIP file
 local-phone-apps := BlurCamera FaceLock LatinIME LatinImeDictionaryPack ApplicationsProvider \
 	CertInstaller ChargeOnlyMode DeepSleepService DrmProvider KeyChain LiveWallpapers \
 	LiveWallpapersPicker MotorolaSettingsProvider MusicFX oma1motService OMAPPowerMeter \
 	OMAProvisioning OneTimeInitializer usbcamera UserDictionaryProvider VisualizationWallpapers \
-	VoiceSearch DefaultContainerService ExtDispService
+	VoiceSearch DefaultContainerService ExtDispService MediaProvider
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
@@ -42,6 +42,7 @@ include $(PORT_BUILD)/porting.mk
 local-zip-misc:
 	@echo Update build.prop
 	cp other/build.prop $(ZIP_DIR)/system/build.prop
+	cp other/default.prop $(ZIP_DIR)/system/default.prop
 
 	@echo update bootanimation
 	rm $(ZIP_DIR)/system/bin/bootanimation
