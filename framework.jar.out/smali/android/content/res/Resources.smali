@@ -4030,7 +4030,7 @@
 
     move-result-object v3
 
-    if-nez v3, :cond_3
+    if-nez v3, :cond_4
 
     :try_start_1
     move-object/from16 v0, p0
