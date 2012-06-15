@@ -56,7 +56,6 @@ local-zip-misc:
 	rm -rf $(ZIP_DIR)/system/multiconfig
 	rm -rf $(ZIP_DIR)/system/tts
 	rm -rf $(ZIP_DIR)/system/vendor/app
-	rm -rf $(ZIP_DIR)/system/vendor/pittpatt
 	rm -r $(ZIP_DIR)/system/bin/su
 
 local-test:
