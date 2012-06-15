@@ -2199,7 +2199,7 @@
     if-eqz v17, :cond_5
 
     :try_start_2
-    throw v17
+    invoke-virtual/range {v17 .. v17}, Ljava/io/OutputStream;->close()V
 
     .line 2468
     :cond_5
@@ -2544,7 +2544,7 @@
     if-eqz v17, :cond_a
 
     :try_start_b
-    throw v17
+    invoke-virtual/range {v17 .. v17}, Ljava/io/OutputStream;->close()V
 
     .line 2468
     :cond_a
