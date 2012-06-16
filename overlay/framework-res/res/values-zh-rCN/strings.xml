@@ -123,7 +123,7 @@
     <string name="yesterday">昨天</string>
     <string name="today">今天</string>
     <string name="tomorrow">明天</string>
-    <string name="hour_minute_24" formatted="false">%-k:%M</string>
+    <string name="hour_minute_24">%-k:%M</string>
     <string name="hour_minute_ampm" formatted="false">%p %-l:%M</string>
     <string name="hour_minute_cap_ampm" formatted="false">%p %-l:%M</string>
     <string name="twelve_hour_time_format">ah:mm</string>
