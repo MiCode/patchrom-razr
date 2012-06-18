@@ -7761,7 +7761,7 @@
     .line 2056
     iget-object v10, p0, Landroid/net/wifi/WifiStateMachine;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v10, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+    #invoke-virtual {v10, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
     .line 2059
     .end local v0           #eapIntent:Landroid/content/Intent;
