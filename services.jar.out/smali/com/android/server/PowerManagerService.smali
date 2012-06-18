@@ -2431,6 +2431,8 @@
 
     .prologue
     .line 2583
+    if-eqz p1, :cond_0
+
     const-string v2, "recovery"
 
     invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
