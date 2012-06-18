@@ -221,8 +221,6 @@
     <string name="CLIRDefaultOnNextCallOff">默认不显示本机号码，但在下一次通话中显示</string>
     <string name="CLIRDefaultOffNextCallOn">默认显示本机号码，但在下一次通话中不显示</string>
     <string name="CLIRDefaultOffNextCallOff">默认显示本机号码，在下一次通话中也显示</string>
-    <string name="SmsPromptText">内存空间已满，请释放内存空间以继续接收短信。</string>
-    <string name="SmsPromptTitle">停止接收短信</string>
     <string name="serviceNotProvisioned">未提供服务。</string>
     <string name="CLIRPermanent">本机号码显示设置无法更改。</string>
     <string name="RestrictedChangedTitle">访问受限情况已发生变化</string>
@@ -534,9 +532,6 @@
     <string name="permdesc_callPrivileged">允许应用程序在您不介入的情况下拨打任何电话（包括紧急呼叫）。恶意应用程序可借此向应急服务机构拨打骚扰电话甚至非法电话。</string>
     <string name="permlab_performCdmaProvisioning">直接启动 CDMA 电话设置</string>
     <string name="permdesc_performCdmaProvisioning">允许应用程序启动 CDMA 服务。恶意应用程序可能会无端启动 CDMA 服务</string>
-    <string name="cdma_unknown_network_sid">未知的CDMA网络（SID %d）</string>
-    <string name="cdma_unknown_network_mccmnc">未知的CDMA网络（%s）</string>
-    <string name="cdma_unknown_network">未知的CDMA网络</string>
     <string name="permlab_locationUpdates">控制位置更新通知</string>
     <string name="permdesc_locationUpdates">允许启用/停用来自收音机的位置更新通知。普通应用程序不能使用此权限。</string>
     <string name="permlab_checkinProperties">访问检入属性</string>
@@ -962,9 +957,6 @@
     <string name="wifi_available_sign_in_detailed">%1$s</string>
     <string name="wifi_watchdog_network_disabled">无法连接到 WLAN</string>
     <string name="wifi_watchdog_network_disabled_detailed">" 互联网连接状况不佳。"</string>
-    <string name="ctcw_connected">中国电信WLAN已连接</string>
-    <string name="ctcw_connected_detailed">计费信息请咨询10000或当地营业厅</string>
-    <string name="ctcw_connected_prompt">您已接入中国电信WLAN网络，计费信息请咨询10000或当地营业厅，不用时请及时关闭。</string>
     <string name="wifi_p2p_dialog_title">WLAN Direct</string>
     <string name="wifi_p2p_turnon_message">启动 WLAN Direct 操作。此操作将会关闭 WLAN 客户端/热点操作。</string>
     <string name="wifi_p2p_failed_message">无法启动 WLAN Direct</string>
@@ -1012,7 +1004,6 @@
     <string name="usb_mtp_notification_title">作为媒体设备连接</string>
     <string name="usb_msd_notification_title">作为大容量存储器连接</string>
     <string name="usb_ptp_notification_title">作为相机连接</string>
-    <string name="usb_modem_notification_title">作为Modem连接</string>
     <string name="usb_cd_installer_notification_title">作为安装程序连接</string>
     <string name="usb_accessory_notification_title">已连接到 USB 配件</string>
     <string name="usb_notification_message">触摸可显示其他 USB 选项</string>
@@ -1205,24 +1196,12 @@
     <string name="sending">正在发送...</string>
     <string name="launchBrowserDefault">要启动浏览器吗？</string>
     <string name="SetupCallDefault">要接听电话吗？</string>
-    <string name="stk_setup_call_default_confirmation_message">您要拨打%1$s吗？</string>
     <string name="ethernet_adapter_connected">以太网适配器已连接</string>
     <string name="ethernet_adapter_connected_details">插入网线以连接以太网</string>
     <string name="ethernet_getting_ip">获取 IP 地址</string>
     <string name="ethernet_getting_ip_details">以太网正在获取 IP 地址...</string>
     <string name="ethernet_connected">以太网已连接</string>
     <string name="ethernet_connected_details">部分应用程序可能无法通过以太网访问</string>
-    <string name="lawmo_lock_screen_prompt_string">设备被锁定，请联系中国移动解锁！</string>
-    <string name="gpsOne_third_party_message">[%s] 希望获得您的位置，是否允许？</string>
-    <string name="gpsOne_third_party_title">位置申请</string>
-    <string name="gpsOne_third_party_ticker">[%s] 正在获取您的位置。</string>
-    <string name="gpsOne_third_party_accept">允许</string>
-    <string name="gpsOne_third_party_reject">拒绝</string>
-    <string name="gpsOne_third_party_accept_timeout">允许</string>
-    <string name="gpsOne_third_party_reject_timeout">拒绝</string>
-    <string name="gpsOne_third_party_notify_timeout">定位申请超时</string>
-    <string name="gpsOne_third_party_system_resp" formatted="false">[%s]发起的定位已经超时, 系统默认%s了此次定位请求。</string>
-    <string name="global_action_reboot">重新启动</string>
     <string name="wifi_available_detailed_new"><item quantity="one">选择打开首选网络探测器</item></string>
     <string name="keyguard_password_enter_sim_pin_code">输入SIM卡PIN码</string>
     <string name="keyguard_password_enter_current_pin_code">输入当前密码:</string>
@@ -1655,64 +1634,10 @@
     <string name="display_thermal_protection_label_on">“显示屏过热保护”已开启</string>
     <string name="display_thermal_protection_info_extra">显示屏已变暗淡以防止高温下老化。设备恢复到正常操作温度时显示屏将回到正常亮度。</string>
     <string name="transport_destination">正在备份以仅调试专用缓存</string>
-    <string name="lockscreen_carrier_roaming">(漫游)</string>
-    <string name="slot1">卡槽1</string>
-    <string name="slot2">卡槽2</string>
-    <string name="gsm_card">G卡</string>
-    <string name="cdma_card">C卡</string>
-    <string name="dual_mode_card">C/G卡</string>
-    <string name="Continue">继续</string>
-    <string name="card_absent">未插卡</string>
-    <string name="card_available">可用</string>
-    <string name="card_pin_locked">PIN锁定</string>
-    <string name="card_puk_locked">PUK锁定</string>
-    <string name="card_net_locked">网络锁</string>
-    <string name="card_unknown">未知卡</string>
-    <string name="no_card_or_invalid_card">"无卡或
-无效卡"</string>
-    <string name="gsm_available">GSM可用</string>
-    <string name="cdma_available">CDMA可用</string>
-    <string name="lockscreen_cdma_network">"(C网) "</string>
-    <string name="lockscreen_gsm_network">"(G网) "</string>
-    <string name="lockscreen_no_card">未插卡</string>
-    <string name="lockscreen_pin_locked">PIN锁定</string>
-    <string name="lockscreen_puk_locked">PUK锁定</string>
-    <string name="lockscreen_perm_locked">永久锁定</string>
-    <string name="unlock_cards">解锁卡</string>
-    <string name="pin_puk_retry_left">（剩余尝试次数： {0}）</string>
-    <string name="keyguard_sim_puk_enter_puk_code">输入 PUK 码解锁手机</string>
-    <string name="keyguard_sim_puk_wrong_puk_code">PUK 码不正确！</string>
-    <string name="keyguard_sim_puk_too_short">PUK码必须为8位数字！</string>
-    <string name="keyguard_sim_puk_new_pin_prompt">输入 4 到 8 位的新 PIN 码</string>
-    <string name="keyguard_sim_puk_confirm_prompt">确认新 PIN</string>
-    <string name="keyguard_sim_puk_new_pin_not_confirm">未确认 PIN 码！请重新输入新 PIN 码。</string>
-    <string name="keyguard_sim_puk_new_pin_too_short">PIN 码必须至少 4 位！输入新 PIN</string>
-    <string name="hot_switch_in_progress">"手机正在查找网络。
-
-请稍候..."</string>
     <string name="unknown_artist_name">未知艺术家</string>
     <string name="unknown_album_name">未知专辑</string>
     <string name="loading_internet_radio">正在打开收音机...</string>
     <string name="app_error_dialog_title">应用程序错误</string>
     <string name="app_error_dialog_message">抱歉，发生错误，我们无法打开该应用程序。</string>
-    <string name="sound_ringtones">铃声</string>
-    <string name="sound_music">音频</string>
-    <string name="sound_video">视频</string>
-    <string name="sound_vibrate_only">仅振动</string>
-    <string name="sound_ignore">忽略此项设置</string>
     <string name="zz_moto_unlock">解锁</string>
-    <string name="wifi_using_priority_dialog_title">发现新网络</string>
-    <string name="wifi_using_priority_dialog_msg">发现WLAN信号,是否使用WLAN网络,使用该网络可能使部分数据业务中断</string>
-    <string name="wifi_using_priority_dialog_yes">是</string>
-    <string name="wifi_using_priority_dialog_no">否</string>
-    <string name="wifi_using_priority_dialog_later">稍后</string>
-    <string name="wifi_using_priority_dialog_rightnow">立即</string>
-    <string name="wifi_using_priority_dialog_ok">确定</string>
-    <string name="wifi_using_priority_dialog_cancel">取消</string>
-    <string name="wifi_disconnect_dialog_title">WLAN网络不可用</string>
-    <string name="wifi_disconnect_dialog_msg">WLAN网络不可用，将使用蜂窝网上网，后续可能产生流量费</string>
-    <string name="wifi_disconnect_dialog_neversuggest">不再提示</string>
-    <string name="wifi_signalweak_dialog_title">信号弱</string>
-    <string name="wifi_signalweak_dialog_msg">当前网络信号弱，发现其他可用网络，是否切换？</string>
-    <string name="wifi_dialog_connect_info">正在连接 %s</string>
 </resources>

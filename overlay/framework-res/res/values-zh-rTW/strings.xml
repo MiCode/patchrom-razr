@@ -221,8 +221,6 @@
     <string name="CLIRDefaultOnNextCallOff">預設不顯示本機號碼，但下一通電話顯示。</string>
     <string name="CLIRDefaultOffNextCallOn">預設顯示本機號碼，但下一通電話不顯示。</string>
     <string name="CLIRDefaultOffNextCallOff">預設顯示本機號碼，下一通電話也繼續顯示。</string>
-    <string name="SmsPromptText">儲存空間已滿，請釋放儲存空間以繼續接收簡訊。</string>
-    <string name="SmsPromptTitle">停止接收簡訊</string>
     <string name="serviceNotProvisioned">無法提供此服務。</string>
     <string name="CLIRPermanent">本機號碼顯示設定無法變更。</string>
     <string name="RestrictedChangedTitle">受限存取已變更</string>
@@ -534,9 +532,6 @@
     <string name="permdesc_callPrivileged">允許應用程式自行撥打任何電話號碼，包括緊急電話號碼。請注意：惡意應用程式可能會利用此權限，向緊急服務撥打騷擾甚至非法電話。</string>
     <string name="permlab_performCdmaProvisioning">直接起始 CDMA 手機設定程序</string>
     <string name="permdesc_performCdmaProvisioning">允許應用程式啟動 CDMA 服務 (惡意應用程式可能會在非必要的情況下啟動 CDMA 服務)。</string>
-    <string name="cdma_unknown_network_sid">未知的CDMA網路（SID %d）</string>
-    <string name="cdma_unknown_network_mccmnc">未知的CDMA網路（%s）</string>
-    <string name="cdma_unknown_network">未知的CDMA網路</string>
     <string name="permlab_locationUpdates">控制位置更新通知</string>
     <string name="permdesc_locationUpdates">允許從廣播中啟用/停用位置資訊更新通知。一般應用程式不應使用這項功能。</string>
     <string name="permlab_checkinProperties">存取登機選項</string>
@@ -962,9 +957,6 @@
     <string name="wifi_available_sign_in_detailed">%1$s</string>
     <string name="wifi_watchdog_network_disabled">無法連線至 WLAN</string>
     <string name="wifi_watchdog_network_disabled_detailed">" 網際網路連線狀況不佳。"</string>
-    <string name="ctcw_connected">CT WLAN 已連線</string>
-    <string name="ctcw_connected_detailed">>請撥打 10000 或聯絡當地的銷售辦事處以瞭解帳單資訊</string>
-    <string name="ctcw_connected_prompt">中國電信 WLAN 已連線，請撥打 10000 或聯絡當地的銷售辦事處以瞭解帳單資訊。請在不需使用時將其關閉。</string>
     <string name="wifi_p2p_dialog_title">WLAN Direct</string>
     <string name="wifi_p2p_turnon_message">啟動 WLAN Direct 作業，這會關閉 WLAN 用戶端/無線基地台作業。</string>
     <string name="wifi_p2p_failed_message">無法啟動 WLAN Direct</string>
@@ -1012,7 +1004,6 @@
     <string name="usb_mtp_notification_title">已視為媒體裝置連線</string>
     <string name="usb_msd_notification_title">已連接為大量儲存裝置</string>
     <string name="usb_ptp_notification_title">已視為相機連線</string>
-    <string name="usb_modem_notification_title">已連接為數據機</string>
     <string name="usb_cd_installer_notification_title">已視為安裝程式連線</string>
     <string name="usb_accessory_notification_title">已連接 USB 配件</string>
     <string name="usb_notification_message">輕觸即可顯示其他 USB 選項</string>
@@ -1205,24 +1196,12 @@
     <string name="sending">傳送中...</string>
     <string name="launchBrowserDefault">啟動「瀏覽器」嗎？</string>
     <string name="SetupCallDefault">接聽電話嗎？</string>
-    <string name="stk_setup_call_default_confirmation_message">您要撥打%1$s嗎？</string>
     <string name="ethernet_adapter_connected">已連接乙太網路配接器</string>
     <string name="ethernet_adapter_connected_details">插入纜線以連接乙太網路</string>
     <string name="ethernet_getting_ip">正在取得 IP 位址</string>
     <string name="ethernet_getting_ip_details">乙太網路正在取得 IP 位址...</string>
     <string name="ethernet_connected">已連接乙太網路</string>
     <string name="ethernet_connected_details">某些應用程式可能無法透過乙太網路來存取</string>
-    <string name="lawmo_lock_screen_prompt_string">中國移動已鎖定此手機。請聯絡中國移動解鎖。</string>
-    <string name="gpsOne_third_party_message">[<g id="requestor_id">%s</g>] 正在請求查詢您的位置。</string>
-    <string name="gpsOne_third_party_title">定位請求</string>
-    <string name="gpsOne_third_party_ticker">[<g id="requestor_id">%s</g>] 正在請求查詢您的位置。</string>
-    <string name="gpsOne_third_party_accept">允許</string>
-    <string name="gpsOne_third_party_reject">拒絕</string>
-    <string name="gpsOne_third_party_accept_timeout">已允許</string>
-    <string name="gpsOne_third_party_reject_timeout">已拒絕</string>
-    <string name="gpsOne_third_party_notify_timeout">定位請求逾時</string>
-    <string name="gpsOne_third_party_system_resp" formatted="false">[<g id="requestor_id">%s</g>] 發起的定位請求已逾時，自動 <g id="respString">%s</g>。</string>
-    <string name="global_action_reboot">重新開機</string>
     <string name="wifi_available_detailed_new"><item quantity="one">選取以開啟偏好網路搜尋器</item></string>
     <string name="keyguard_password_enter_sim_pin_code">輸入SIM卡PIN碼</string>
     <string name="keyguard_password_enter_current_pin_code">輸入當前密碼:</string>
@@ -1657,65 +1636,10 @@
     <string name="display_thermal_protection_label_on">[顯示螢幕熱防護] 已開啟</string>
     <string name="display_thermal_protection_info_extra">螢幕已降低亮度，以防在高溫下燒毀。當裝置恢復到正常運行溫度時，螢幕將恢復到正常亮度。</string>
     <string name="transport_destination">正在備份以僅偵錯專用快取</string>
-    <string name="lockscreen_carrier_roaming">(漫遊)</string>
-    <string name="slot1">插槽 1</string>
-    <string name="slot2">插槽 2</string>
-    <string name="gsm_card">G 卡</string>
-    <string name="cdma_card">C 卡</string>
-    <string name="dual_mode_card">C/G 卡</string>
-    <string name="Continue">繼續</string>
-    <string name="card_absent">未插入卡</string>
-    <string name="card_available">可用</string>
-    <string name="card_pin_locked">PIN 已鎖定</string>
-    <string name="card_puk_locked">PUK 已鎖定</string>
-    <string name="card_net_locked">網路已鎖定</string>
-    <string name="card_unknown">未知</string>
-    <string name="no_card_or_invalid_card">"沒有卡或
-卡
-無效"</string>
-    <string name="gsm_available">GSM 可用</string>
-    <string name="cdma_available">CDMA 可用</string>
-    <string name="lockscreen_cdma_network">"(CDMA) "</string>
-    <string name="lockscreen_gsm_network">"(GSM) "</string>
-    <string name="lockscreen_no_card">沒有卡</string>
-    <string name="lockscreen_pin_locked">PIN 已鎖定</string>
-    <string name="lockscreen_puk_locked">PUK 已鎖定</string>
-    <string name="lockscreen_perm_locked">永久鎖定</string>
-    <string name="unlock_cards">卡片解鎖</string>
-    <string name="pin_puk_retry_left">(剩餘次數：{0})</string>
-    <string name="keyguard_sim_puk_enter_puk_code">輸入 PUK 碼來解鎖手機</string>
-    <string name="keyguard_sim_puk_wrong_puk_code">不正確的 PUK 碼！</string>
-    <string name="keyguard_sim_puk_too_short">PUK碼必須爲8位數字！</string>
-    <string name="keyguard_sim_puk_new_pin_prompt">輸入 4 到 8 位數之間的新 PIN</string>
-    <string name="keyguard_sim_puk_confirm_prompt">確認新的 PIN</string>
-    <string name="keyguard_sim_puk_new_pin_not_confirm">PIN 尚未確認！重新輸入新的 PIN。</string>
-    <string name="keyguard_sim_puk_new_pin_too_short">PIN 至少必須有 4 位數！輸入新的 PIN</string>
-    <string name="hot_switch_in_progress">"手機正在執行網路選取。
-
-請稍候…"</string>
     <string name="unknown_artist_name">未知演出者</string>
     <string name="unknown_album_name">未知專輯</string>
     <string name="loading_internet_radio">正在啟動收音機...</string>
     <string name="app_error_dialog_title">應用程式錯誤</string>
     <string name="app_error_dialog_message">很抱歉，發生錯誤，而且我們無法開啟此應用程式。</string>
-    <string name="sound_ringtones">鈴聲</string>
-    <string name="sound_music">音頻</string>
-    <string name="sound_video">視頻</string>
-    <string name="sound_vibrate_only">僅振動</string>
-    <string name="sound_ignore">忽略此項設置</string>
     <string name="zz_moto_unlock">解鎖</string>
-    <string name="wifi_using_priority_dialog_title">已找到可用的網路</string>
-    <string name="wifi_using_priority_dialog_msg">WLAN 網路 %s 可用，正在使用 WLAN 或不是，如果「是」，可能會中斷某些資料連線</string>
-    <string name="wifi_using_priority_dialog_yes">是</string>
-    <string name="wifi_using_priority_dialog_no">否</string>
-    <string name="wifi_using_priority_dialog_later">稍後</string>
-    <string name="wifi_using_priority_dialog_rightnow">立即</string>
-    <string name="wifi_using_priority_dialog_ok">確定</string>
-    <string name="wifi_using_priority_dialog_cancel">取消</string>
-    <string name="wifi_disconnect_dialog_title">無法使用 WLAN 網路</string>
-    <string name="wifi_disconnect_dialog_msg">無法使用 WLAN 網路，將變更為行動網路，可能會產生某些費用的流量</string>
-    <string name="wifi_disconnect_dialog_neversuggest">從未通知我</string>
-    <string name="wifi_signalweak_dialog_title">訊號微弱</string>
-    <string name="wifi_signalweak_dialog_msg">轉換為其他較佳網路？</string>
-    <string name="wifi_dialog_connect_info">與 %s 連線</string>
 </resources>
