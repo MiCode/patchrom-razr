@@ -4,11 +4,4 @@
     <storage android:mountPoint="/mnt/sdcard" android:storageDescription="@string/internal_storage" android:primary="true" />
     <storage android:mountPoint="/mnt/sdcard-ext" android:storageDescription="@string/removable_sdcard" android:removable="true" />
     <storage android:mountPoint="/mnt/usbdisk_1.1.1" android:storageDescription="@string/storage_usb_disk" android:removable="true" />
-    <storage android:mountPoint="/mnt/usbdisk_1.1" android:storageDescription="@string/storage_usb_disk" android:removable="true" />
-    <storage android:mountPoint="/mnt/usbdisk_1.2" android:storageDescription="@string/storage_usb_disk" android:removable="true" />
-    <storage android:mountPoint="/mnt/usbdisk_1.3" android:storageDescription="@string/storage_usb_disk" android:removable="true" />
-    <storage android:mountPoint="/mnt/usbdisk_1.4" android:storageDescription="@string/storage_usb_disk" android:removable="true" />
-    <storage android:mountPoint="/mnt/usbdisk_1.5" android:storageDescription="@string/storage_usb_disk" android:removable="true" />
-    <storage android:mountPoint="/mnt/usbdisk_1.6" android:storageDescription="@string/storage_usb_disk" android:removable="true" />
-    <storage android:mountPoint="/mnt/usbdisk_1.7" android:storageDescription="@string/storage_usb_disk" android:removable="true" />
 </StorageList>
