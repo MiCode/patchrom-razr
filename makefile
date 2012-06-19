@@ -13,7 +13,7 @@ local-modified-apps := BlurCamera
 
 local-modified-jars := 
 
-local-miui-modified-apps := Mms MiuiHome Settings
+local-miui-modified-apps := Mms MiuiHome Settings Phone ThemeManager
 # All apks from MIUI
 local-miui-removed-apps  := LatinIME MediaProvider
 
