@@ -32,4 +32,5 @@
     <favorite launcher:className="com.android.contacts.activities.PeopleActivity" launcher:packageName="com.android.contacts" launcher:container="-101" launcher:x="1" launcher:y="0" />
     <favorite launcher:className="com.android.browser.BrowserActivity" launcher:packageName="com.android.browser" launcher:container="-101" launcher:x="2" launcher:y="0" />
     <favorite launcher:className="com.android.mms.ui.MmsTabActivity" launcher:packageName="com.android.mms" launcher:container="-101" launcher:x="3" launcher:y="0" />
+    <favorite launcher:className="com.motorola.contextual.smartrules.app.LandingPageActivity" launcher:packageName="com.motorola.contextual.smartrules" launcher:screen="2" launcher:x="0" launcher:y="0" />
 </favorites>
