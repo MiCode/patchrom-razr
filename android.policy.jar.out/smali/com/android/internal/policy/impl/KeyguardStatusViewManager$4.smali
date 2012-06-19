@@ -173,7 +173,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lcom/android/internal/policy/impl/KeyguardScreenCallback;->showToastMessage(Ljava/lang/String;)V
+    #invoke-interface {v0, v1}, Lcom/android/internal/policy/impl/KeyguardScreenCallback;->showToastMessage(Ljava/lang/String;)V
 
     .line 1013
     const/4 v0, 0x1
@@ -232,7 +232,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lcom/android/internal/policy/impl/KeyguardScreenCallback;->showToastMessage(Ljava/lang/String;)V
+    #invoke-interface {v0, v1}, Lcom/android/internal/policy/impl/KeyguardScreenCallback;->showToastMessage(Ljava/lang/String;)V
 
     .line 989
     const/4 v0, 0x0
