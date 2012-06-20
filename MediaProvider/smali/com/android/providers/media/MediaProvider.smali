@@ -7500,17 +7500,6 @@
 
     if-eqz v10, :cond_3
 
-    .line 3077
-    invoke-static {v10}, Landroid/media/MediaFile;->getFileTypeByPath(Ljava/lang/String;)I
-
-    move-result v3
-
-    invoke-static {v3}, Landroid/media/MediaFile;->isAudioFileType(I)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_3
-
     .line 3078
     invoke-static {v10}, Landroid/media/MediaFile;->getFileTitle(Ljava/lang/String;)Ljava/lang/String;
 

@@ -9,7 +9,7 @@ local-zip-file     := europe_4.0.4.zip
 # local-out-zip-file :=
 
 # All apps from original ZIP, but has smali files chanded
-local-modified-apps := BlurCamera
+local-modified-apps := BlurCamera MediaProvider
 
 local-modified-jars := 
 
