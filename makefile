@@ -22,7 +22,7 @@ local-phone-apps := BlurCamera FaceLock LatinIME LatinImeDictionaryPack Applicat
 	CertInstaller ChargeOnlyMode DeepSleepService DrmProvider KeyChain LiveWallpapers \
 	LiveWallpapersPicker MotorolaSettingsProvider MusicFX oma1motService OMAPPowerMeter \
 	OMAProvisioning OneTimeInitializer usbcamera UserDictionaryProvider VisualizationWallpapers \
-	VoiceSearch DefaultContainerService ExtDispService MediaProvider SmartActions
+	VoiceSearch DefaultContainerService ExtDispService MediaProvider SmartActions ContextEngine
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
