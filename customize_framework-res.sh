@@ -4,8 +4,6 @@
 # $2: dir for target framework-res
 #
 
-FRAMEWORK_CN_RES=$PORT_ROOT/razr/overlay/framework-res/res
-
 if [ `basename $1` = "drawable-hdpi" ];then
 	restype=`basename $1`
 	for file in `find "$1"`
@@ -31,6 +29,5 @@ if [ `basename $1` = "drawable-hdpi" ];then
         	        cp $file $targetfile
 	       	fi
 	done
-        cp -r $FRAMEWORK_CN_RES/values-* $2
 fi
 
