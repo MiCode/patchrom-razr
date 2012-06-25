@@ -123,7 +123,7 @@
     <string name="yesterday">昨天</string>
     <string name="today">今天</string>
     <string name="tomorrow">明天</string>
-    <string name="hour_minute_24">%-k:%M</string>
+    <string name="hour_minute_24" formatted="false">%-k:%M</string>
     <string name="hour_minute_ampm" formatted="false">%p %-l:%M</string>
     <string name="hour_minute_cap_ampm" formatted="false">%p %-l:%M</string>
     <string name="twelve_hour_time_format">ah:mm</string>
@@ -1537,13 +1537,13 @@
     <string name="press_done_when_done">完成后点按完成。</string>
     <string name="press_enter_when_done">完成后按回车键</string>
     <string name="lockscreen_failed_attempts_times_countdown">"密码错误。
-剩余尝试次数%d。"</string>
+剩余尝试次数%1$d。"</string>
     <string name="lockscreen_failed_attempt_time_countdown">"密码错误。
-剩余尝试次数%d。"</string>
-    <string name="mot_lockscreen_too_many_failed_attempts_countdown" formatted="false">"请在%d秒后重试。
-剩余尝试次数%d。"</string>
-    <string name="mot_lockscreen_too_many_failed_attempt_countdown" formatted="false">"请在%d秒后重试。
-剩余尝试次数%d。"</string>
+剩余尝试次数%1$d。"</string>
+    <string name="mot_lockscreen_too_many_failed_attempts_countdown" formatted="false">"请在%1$d秒后重试。
+剩余尝试次数%1$d。"</string>
+    <string name="mot_lockscreen_too_many_failed_attempt_countdown" formatted="false">"请在%1$d秒后重试。
+剩余尝试次数%1$d。"</string>
     <string name="vzw_disable_we_gsm_cf">Verizon Wireless 网络之外不支持呼叫转移。</string>
     <string name="Select_text">选择文字</string>
     <string name="Share_selected_text">共享选定的文字</string>
