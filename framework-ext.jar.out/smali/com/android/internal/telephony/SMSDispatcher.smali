@@ -2202,6 +2202,28 @@
     .prologue
     const/4 v7, 0x1
 
+    iget-object v1, p0, Lcom/android/internal/telephony/SMSDispatcher;->mContext:Landroid/content/Context;
+
+    invoke-static {v1, p1}, Lmiui/provider/ExtraTelephony;->checkFirewallForSms(Landroid/content/Context;[[B)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_10
+
+    const/4 v1, 0x1
+
+    const/4 v2, -0x1
+
+    const/4 v3, 0x0
+
+    move-object/from16 v4, p2
+
+    invoke-virtual {p0, v1, v2, v3, v4}, Lcom/android/internal/telephony/SMSDispatcher;->acknowledgeLastIncomingSms(ZILandroid/os/Message;Lcom/android/internal/telephony/SMSDispatcher$MtSmsTracker;)V
+
+    goto :goto_1
+
+    :cond_10
+
     .line 1049
     new-instance v3, Lcom/motorola/android/internal/telephony/AppDirectedSms;
 
