@@ -1,0 +1,61 @@
+# static fields
+.field private static final SUPPLY_PIN_COMPLETE:I = 0x64
+
+.field private mNumRetries:I
+
+.method static synthetic access$1502(Lcom/android/phone/PhoneInterfaceManager$UnlockSim;I)I
+    .locals 0
+    .parameter "x0"
+    .parameter "x1"
+
+    .prologue
+    .line 518
+    iput p1, p0, Lcom/android/phone/PhoneInterfaceManager$UnlockSim;->mNumRetries:I
+
+    return p1
+.end method
+
+.method static synthetic access$1600(Lcom/android/phone/PhoneInterfaceManager$UnlockSim;)Z
+    .locals 1
+    .parameter "x0"
+
+    .prologue
+    .line 518
+    iget-boolean v0, p0, Lcom/android/phone/PhoneInterfaceManager$UnlockSim;->mResult:Z
+
+    return v0
+.end method
+
+.method static synthetic access$1602(Lcom/android/phone/PhoneInterfaceManager$UnlockSim;Z)Z
+    .locals 0
+    .parameter "x0"
+    .parameter "x1"
+
+    .prologue
+    .line 518
+    iput-boolean p1, p0, Lcom/android/phone/PhoneInterfaceManager$UnlockSim;->mResult:Z
+
+    return p1
+.end method
+
+.method static synthetic access$1702(Lcom/android/phone/PhoneInterfaceManager$UnlockSim;Z)Z
+    .locals 0
+    .parameter "x0"
+    .parameter "x1"
+
+    .prologue
+    .line 518
+    iput-boolean p1, p0, Lcom/android/phone/PhoneInterfaceManager$UnlockSim;->mDone:Z
+
+    return p1
+.end method
+
+.method public getNumRetries()I
+    .locals 1
+
+    .prologue
+    .line 613
+    iget v0, p0, Lcom/android/phone/PhoneInterfaceManager$UnlockSim;->mNumRetries:I
+
+    return v0
+.end method

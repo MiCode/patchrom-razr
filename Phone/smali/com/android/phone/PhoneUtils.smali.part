@@ -1,0 +1,134 @@
+.method public static getRetryLeftSimPin(Landroid/os/AsyncResult;)I
+    .locals 5
+    .parameter "ar"
+
+    .prologue
+    .line 2825
+    const/4 v2, 0x0
+
+    .line 2832
+    .local v2, numRetries:I
+    if-eqz p0, :cond_1
+
+    .line 2833
+    iget-object v3, p0, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
+
+    if-eqz v3, :cond_0
+
+    .line 2834
+    const-string v3, "PhoneUtils"
+
+    iget-object v4, p0, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
+
+    invoke-virtual {v4}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 2835
+    iget-object v3, p0, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
+
+    instance-of v3, v3, Lcom/android/internal/telephony/CommandException;
+
+    if-eqz v3, :cond_0
+
+    .line 2836
+    iget-object v0, p0, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
+
+    check-cast v0, Lcom/android/internal/telephony/CommandException;
+
+    .line 2837
+    .local v0, ex:Lcom/android/internal/telephony/CommandException;
+    invoke-virtual {v0}, Lcom/android/internal/telephony/CommandException;->getCommandError()Lcom/android/internal/telephony/CommandException$Error;
+
+    move-result-object v3
+
+    sget-object v4, Lcom/android/internal/telephony/CommandException$Error;->GENERIC_FAILURE:Lcom/android/internal/telephony/CommandException$Error;
+
+    if-ne v3, v4, :cond_0
+
+    .line 2839
+    const/4 v3, -0x2
+
+    .line 2869
+    .end local v0           #ex:Lcom/android/internal/telephony/CommandException;
+    :goto_0
+    return v3
+
+    .line 2844
+    :cond_0
+    iget-object v3, p0, Landroid/os/AsyncResult;->result:Ljava/lang/Object;
+
+    if-eqz v3, :cond_1
+
+    .line 2845
+    iget-object v3, p0, Landroid/os/AsyncResult;->result:Ljava/lang/Object;
+
+    check-cast v3, [I
+
+    move-object v1, v3
+
+    check-cast v1, [I
+
+    .line 2847
+    .local v1, int_array:[I
+    array-length v3, v1
+
+    if-lez v3, :cond_1
+
+    .line 2849
+    const/4 v3, 0x0
+
+    aget v2, v1, v3
+
+    .line 2857
+    .end local v1           #int_array:[I
+    :cond_1
+    iget-object v3, p0, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
+
+    if-eqz v3, :cond_2
+
+    .line 2858
+    const-string v3, "PhoneUtils"
+
+    iget-object v4, p0, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
+
+    invoke-virtual {v4}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 2859
+    iget-object v3, p0, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
+
+    instance-of v3, v3, Lcom/android/internal/telephony/CommandException;
+
+    if-eqz v3, :cond_2
+
+    .line 2860
+    iget-object v0, p0, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
+
+    check-cast v0, Lcom/android/internal/telephony/CommandException;
+
+    .line 2861
+    .restart local v0       #ex:Lcom/android/internal/telephony/CommandException;
+    invoke-virtual {v0}, Lcom/android/internal/telephony/CommandException;->getCommandError()Lcom/android/internal/telephony/CommandException$Error;
+
+    move-result-object v3
+
+    sget-object v4, Lcom/android/internal/telephony/CommandException$Error;->GENERIC_FAILURE:Lcom/android/internal/telephony/CommandException$Error;
+
+    if-ne v3, v4, :cond_2
+
+    .line 2863
+    const/4 v2, -0x2
+
+    .end local v0           #ex:Lcom/android/internal/telephony/CommandException;
+    :cond_2
+    move v3, v2
+
+    .line 2869
+    goto :goto_0
+.end method

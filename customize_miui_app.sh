@@ -22,6 +22,13 @@ if [ $1 = "Settings" ];then
 fi
 
 if [ $1 = "Phone" ];then
+    for file in `find $1/smali -name *.part`
+    do
+	filepath=`dirname $file`
+	filename=`basename $file .part`
+        dstfile="out/$filepath/$filename"
+        cat $file >> $dstfile
+    done
     $XMLMERGYTOOL $1/res/values $2/res/values
 fi
 
