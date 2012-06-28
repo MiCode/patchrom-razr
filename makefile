@@ -52,6 +52,9 @@ local-zip-misc:
 	@echo add system config
 	cp other/system_etc/* $(ZIP_DIR)/system/etc/
 
+	@echo add system app
+	cp other/system_app/* $(ZIP_DIR)/system/app/
+
 	@echo delete redundance files
 	rm -rf $(ZIP_DIR)/system/media/MotoDemo
 	rm -rf $(ZIP_DIR)/system/multiconfig

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stock_settings">"原厂设置"</string>
+    <string name="stock_settings_entry_title">"HDMI 连接"</string>
+    <string name="stock_settings_entry_summary">"启动程序以检测HDMI线"</string>
+</resources>
+
