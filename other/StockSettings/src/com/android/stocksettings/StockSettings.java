@@ -18,6 +18,7 @@ package com.android.stocksettings;
 import android.app.ActivityManagerNative;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.database.ContentObserver;
@@ -61,11 +62,14 @@ public class StockSettings extends PreferenceActivity{
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mStockSetEntry) {
-            if (mStockSetEntry.isChecked()) {
-                Settings.System.putInt(getContentResolver(), STOCK_SET_ENTRY_DB_KEY, 1);
-            } else {
-                Settings.System.putInt(getContentResolver(), STOCK_SET_ENTRY_DB_KEY, 0);
-            }
+            int selectResult = mStockSetEntry.isChecked()?1:0;
+
+            Settings.System.putInt(getContentResolver(), STOCK_SET_ENTRY_DB_KEY, selectResult);
+
+            Intent intent = new Intent("com.motorola.intent.action.EXTDISP_CONTROL_SETTING");
+            intent.putExtra("setting", "autodetect");
+            intent.putExtra("autodetect", selectResult);
+            mStockSetEntry.getContext().sendStickyBroadcast(intent);
         }
         else {
             //do nothing
