@@ -27,4 +27,14 @@ if [ $2 = "out/framework" ];then
 	done
 	$APKTOOL b  "out/framework-ext.jar.out" "out/framework-ext.jar"
 	cp "out/framework-ext.jar" "out/ZIP/system/framework/framework-ext.jar"
+
+elif [ $2 = "out/android.policy" ];then
+    curdir=`pwd`
+    cd overlay/android.policy.jar.out
+    for file in `find . -name *.smali`
+    do
+        dstfile="$curdir/out/android.policy/$file"
+        cat $file >> $dstfile
+    done
+    cd -
 fi

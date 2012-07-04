@@ -177,7 +177,7 @@
     iput-boolean v0, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mEnableFallback:Z
 
     .line 123
-    iput-boolean v0, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mShowLockBeforeUnlock:Z
+    iput-boolean v1, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mShowLockBeforeUnlock:Z
 
     .line 127
     iput-boolean v0, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mBoundToFaceLockService:Z
@@ -1303,13 +1303,7 @@
 
     if-eqz v1, :cond_3
 
-    invoke-virtual {p0}, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->getCallback()Lcom/android/internal/policy/impl/KeyguardViewCallback;
-
-    move-result-object v1
-
-    invoke-interface {v1}, Lcom/android/internal/policy/impl/KeyguardViewCallback;->isInSecurityTimeoutPeriod()Z
-
-    move-result v1
+    iget-boolean v1, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mShowLockBeforeUnlock:Z
 
     if-nez v1, :cond_3
 
@@ -2004,7 +1998,7 @@
     :cond_1
     iget-object v1, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mKeyguardScreenCallback:Lcom/android/internal/policy/impl/KeyguardScreenCallback;
 
-    invoke-interface {v1}, Lcom/android/internal/policy/impl/KeyguardScreenCallback;->goToUnlockScreen()V
+    #invoke-interface {v1}, Lcom/android/internal/policy/impl/KeyguardScreenCallback;->goToUnlockScreen()V
 
     .line 956
     :goto_0
@@ -4897,7 +4891,7 @@
 
     sget-object v2, Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;->UnlockScreen:Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;
 
-    if-ne v1, v2, :cond_2
+    #if-ne v1, v2, :cond_2
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->activateFaceLockIfAble()V
 
@@ -4932,6 +4926,7 @@
 
     .line 874
     :cond_4
+
     invoke-static {}, Lcom/motorola/webtop/WebtopMode;->getInstance()Lcom/motorola/webtop/WebtopMode;
 
     move-result-object v1
@@ -4950,6 +4945,7 @@
 
     move-result v1
 
+    goto :cond_5
     if-eqz v1, :cond_5
 
     .line 875
@@ -4961,6 +4957,7 @@
 
     .line 879
     :cond_5
+
     invoke-virtual {p0, v4}, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->show(I)V
 
     goto :goto_1
@@ -5043,18 +5040,7 @@
     :cond_2
     if-eqz v0, :cond_1
 
-    iget-object v1, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mMode:Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;
-
-    sget-object v2, Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;->UnlockScreen:Lcom/android/internal/policy/impl/LockPatternKeyguardView$Mode;
-
-    if-ne v1, v2, :cond_1
-
-    .line 921
-    iget v1, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mShowWhy:I
-
-    if-nez v1, :cond_1
-
-    .line 922
+    .line 685
     invoke-direct {p0}, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->activateFaceLockIfAble()V
 
     goto :goto_0
