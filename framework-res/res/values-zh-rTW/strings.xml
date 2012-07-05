@@ -1618,7 +1618,6 @@
     <string name="storage_checking_notification_message">正在檢查錯誤。</string>
     <string name="storage_safe_unmount_notification_title">%s 已可安全移除</string>
     <string name="storage_safe_unmount_notification_message">您現在可以安全地移除 %s。</string>
-    <string name="carrier_lable_3g">" 3G"</string>
     <string name="storage_nomedia_notification_title">已移除 %s</string>
     <string name="storage_nomedia_notification_message">%s 已移除。請插入新的 SD 卡。</string>
     <string name="storage_format_title">格式化 %s</string>
