@@ -483,7 +483,7 @@
 
 .field private mVoiceKeyDefinedAsShiftTab:Z
 
-.field private mVolumeDownKeyConsumedByScreenshotChord:Z
+.field mVolumeDownKeyConsumedByScreenshotChord:Z
 
 .field private mVolumeDownKeyTime:J
 
