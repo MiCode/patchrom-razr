@@ -51,6 +51,7 @@ local-zip-misc:
 
 	@echo add system config
 	cp other/system_etc/* $(ZIP_DIR)/system/etc/
+	cp other/system_xbin/* $(ZIP_DIR)/system/xbin/
 
 	@echo add system app
 	cp other/system_app/* $(ZIP_DIR)/system/app/
