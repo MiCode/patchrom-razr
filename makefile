@@ -23,7 +23,7 @@ local-phone-apps := BlurCamera FaceLock LatinIME LatinImeDictionaryPack Applicat
 	LiveWallpapersPicker MotorolaSettingsProvider MusicFX oma1motService OMAPPowerMeter \
 	OMAProvisioning OneTimeInitializer usbcamera UserDictionaryProvider VisualizationWallpapers \
 	VoiceSearch DefaultContainerService ExtDispService MediaProvider SmartActions ContextEngine \
-	DockComm DockService MotoDockHelperService SmartCarDock SmartDock
+	DockComm DockService MotoDockHelperService SmartCarDock SmartDock SmartActionFW
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
