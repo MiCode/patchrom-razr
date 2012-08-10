@@ -66,6 +66,10 @@ local-zip-misc:
 local-test:
 #	rm -f $(local-out-zip-file)
 #	cp .build/$(local-out-zip-file) 
+	@echo push $(OUT_ZIP) to phone sdcard
+	adb shell mount sdcard
+	adb shell rm -f /sdcard/update.zip
+	adb push out/update.zip /sdcard/update.zip
 
 #enter recovery
 #echo 1 > /data/.recovery_mode ; sync ; reboot ;
