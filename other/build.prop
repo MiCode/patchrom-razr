@@ -101,6 +101,9 @@ ro.mot.hw.calibratedImager=1
 persist.mot.usb.mediasync = 1
 # persist.usb.android_config = 1
 
+#switcher for allowing the volume key(up&down) to wakeup phone
+persist.mot.volumekey.wakeup=1
+
 # System property for Security Middleware Component
 ro.service.start.smc=1
 
