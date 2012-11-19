@@ -24,7 +24,8 @@ local-phone-apps := BlurCamera FaceLock LatinIME LatinImeDictionaryPack Applicat
 	OMAProvisioning OneTimeInitializer usbcamera UserDictionaryProvider VisualizationWallpapers \
 	VoiceSearch DefaultContainerService ExtDispService MediaProvider SmartActions ContextEngine \
 	DockComm DockService MotoDockHelperService SmartCarDock SmartDock SmartActionFW DLNA SetupProvider \
-	blur-services DlnaSystemService
+	blur-services DlnaSystemService Ils SuggestionsProvider SuggestionsRuleCheckerCore \
+	SuggestionsServiceScheduler
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
